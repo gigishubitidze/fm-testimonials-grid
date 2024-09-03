@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  background-color: #e5eff5;
+  padding: 10% 5%;
+}
+
+.main-container {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.person-info {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.person-info img {
+  width: 28px;
+  height: 28px;
+  border: 2px solid #957bbf;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.person-info .name {
+  font-weight: 500;
+}
+
+.person-info .status {
+  opacity: 0.5;
+}
+
+.item {
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.item h2 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.item > P {
+  opacity: 0.7;
+}
+
+.item-1 {
+  color: #cfcfcf;
+  background-color: #7541c8;
+}
+
+.item-2 {
+  color: #ecf2f8;
+  background-color: #48556a;
+}
+
+.item-3 {
+  color: #515862;
+  background-color: #fff;
+}
+
+.item-4 {
+  color: #ecf2f8;
+  background-color: #19212e;
+}
+
+.item-5 {
+  color: #515862;
+  background-color: #fff;
+}
+
+@media (min-width: 576px) {
+  .main-container,
+  .sub-container {
+    flex-direction: row;
+  }
+
+  .sub-container {
+    flex-basis: 50%;
+  }
+
+  .left-container {
+    flex-basis: 75%;
+  }
+
+  .item-5 {
+    flex-basis: 25%;
+  }
+
+  .item-1,
+  .item-4 {
+    flex-basis: 65%;
+  }
+
+  .item-2,
+  .item-3 {
+    flex-basis: 35%;
+  }
+}
